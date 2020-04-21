@@ -1,3 +1,5 @@
+
+  
 import random 
 
 def roll_die(n): 
@@ -25,7 +27,7 @@ def crazy_dice(n,k):
     result = roll_die(n) + roll_die(n)
     num_dict[result] = num_dict[result] + 1
   for (key, value) in num_dict.items():
-    print (str(key) + ": " + str(value) + ", probability: " + str(round(value/k*100, 2)) + "%")
+    print ("sum of " + str(key) + ": " + str(value) + " times, probability: " + str(round(value/k*100, 2)) + "%")
 
 # crazy_dice(6,10000)
 
@@ -41,4 +43,5 @@ def crazy_crazy_dice(n,k):
   for (key, value) in num_dict.items():
     print (str(key) + ": " + str(value) + ", probability: " + str(round(value/k*100, 2)) + "%")
 
-crazy_crazy_dice(6,100000)
+crazy_dice(6,1000000)
+
