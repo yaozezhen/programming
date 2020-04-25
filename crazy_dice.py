@@ -26,7 +26,7 @@ def crazy_dice(n,k):
   for i in range(k): 
     result = roll_die(n) + roll_die(n)
     num_dict[result] = num_dict[result] + 1
-  print ("Roll two " + str(n) + "-sided dice " + str(k) + " times:")
+  print ("Roll two " + str(n) + "-sided dice " + str(k) + " times: \n")
   for (key, value) in num_dict.items():
     print ("sum of " + str(key) + ": " + str(value) + " times, probability: " + str(round(value/k*100, 2)) + "%")
 
