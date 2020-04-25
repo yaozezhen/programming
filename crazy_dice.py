@@ -30,7 +30,7 @@ def crazy_dice(n,k):
   for (key, value) in num_dict.items():
     print ("sum of " + str(key) + ": " + str(value) + " times, probability: " + str(round(value/k*100, 2)) + "%")
 
-# crazy_dice(6,10000)
+crazy_dice(6,10000)
 
 def crazy_crazy_dice(n,k): 
   num_dict = {}
@@ -44,5 +44,5 @@ def crazy_crazy_dice(n,k):
   for (key, value) in num_dict.items():
     print (str(key) + ": " + str(value) + ", probability: " + str(round(value/k*100, 2)) + "%")
 
-crazy_dice(6,1000000)
+# crazy_dice(6,1000000)
 
