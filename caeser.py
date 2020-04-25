@@ -1,20 +1,6 @@
-# print ("Jane likes bunnies.")
-# print (chr(65))
-# print (ord("A"))
-# print ("%s%d" % (chr(65), ord("A")))
-# print ("%d%s" % (ord("A"), chr(65)))
-name = "Jessy"
-#print (name[0])
-
-# function definitions
-def add(a, b):
-  return a + b
-#print (add(10, 10))
-
 def caeser_encrypt(message, code): 
   encrypted_message = []
   for letter in message: 
-    # if [space], skip it
     if (letter == " "):
       encrypted_message.append(letter)
       continue
@@ -33,7 +19,6 @@ def caeser_encrypt(message, code):
 def caeser_decrypt(message, code): 
   decrypted_message = []
   for letter in message: 
-    # if [space], skip it
     if (letter == " "):
       decrypted_message.append(letter)
       continue
