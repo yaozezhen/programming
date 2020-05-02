@@ -14,7 +14,7 @@ def eveningTheOdds(diceList,k):
     outcome = random.choice(die1) + random.choice(die2)
     sumDict[outcome] += 1
   for (key, value) in sorted(sumDict.items()): 
-    if value > 0: 
+    if (value > 0): 
       print ("sum of", str(key) + ":", value, "times, probability:", str(round(int(value)/k*100, 2)) + "%")
 
 #eveningTheOdds([die_1, die_2], 10000)
@@ -31,7 +31,7 @@ def permutationETO(diceList,k):
     outcome2 = random.choice(die2)
     sumDict[outcome1, outcome2] += 1
   for (key, value) in sumDict.items(): 
-    if value > 1: 
+    if (value > 1): 
       print ("sum of", str(key) + ":", value, "times, probability:", str(round(value/k*100, 2)) + "%")
 
 #permutationETO([die_1, die_2], 10000)
@@ -49,7 +49,7 @@ def crazyETO(diceList,k):
       outcome += random.choice(diceList[j])
     sumDict[outcome] += 1
   for (key, value) in sorted(sumDict.items()): 
-    if value > 0: 
+    if (value > 0): 
       print ("sum of", str(key) + ":", value, "times, probability:", str(round(int(value)/k*100, 2)) + "%")
 
 crazyETO([die_1, die_2, die_3], 10000)
